@@ -1,0 +1,18 @@
+class solution
+{
+    boolean isCircular(Node head)
+    {
+	Node temp=head;
+	Node temp1=head;
+	if(head==null){
+	    return true;
+	}
+	while(temp!=null){
+	    if(temp.next==head){
+	        return true;
+	    }
+	    temp=temp.next;
+	}
+	return false;
+    }
+}
